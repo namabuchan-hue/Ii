@@ -299,26 +299,33 @@ SUBJECT 001
 </div>
 </div>
 <div class="footer">
-<span>ちい虐ルーム / 対象個体 001</span><span>白豚の都合は、お構いなし。</span>
+<span>ちい虐ルーム / 対象個体 001</span><span>/ 対象個体 001</span><span>白豚の都合は、お構いなし。</span>
 </div>
 </main>
+
 <div id="details-scrim" class="details-scrim" hidden></div>
+
 <div class="veil" id="picker" role="dialog" aria-modal="true" aria-labelledby="picker-title">
-<div class="picker">
-<div class="eyebrow">
-SELECT SUBJECT
+  <div class="picker">
+    <p class="eyebrow">SELECT SUBJECT</p>
+    <h2 id="picker-title">どの白豚にする？</h2>
+    <p>
+      野良の白豚、赤糞、白ベビ。<br>
+      拾うたびに、強がり・食い意地・臆病さ・物への執着が異なります。
+    </p>
+    
+    <div class="options" id="options">
+      <button type="button" class="option" data-type="normal">野良の白豚</button>
+      <button type="button" class="option" data-type="red">赤糞</button>
+      <button type="button" class="option" data-type="white">白ベビ</button>
+    </div>
+
+    <div class="picker-foot">
+      <p><small>対象は一度に一匹。拾い直すと、その個体の操作記録や状態は新しい個体に置き換わります。</small></p>
+      <button type="button" id="picker-close" hidden>閉じる</button>
+    </div>
+  </div>
 </div>
-<h2 id="picker-title">
-どの白豚にする？
-</h2>
-<p>
-野良の白豚、赤糞、白ベビ。<br>拾うたびに、強がり・食い意地・臆病さ・物への執着が異なります。
-</p>
-<div class="options" id="options">
-</div>
-<div class="picker-foot">
-<span>対象は一度に一匹。拾い直すと、その個体の操作記録や状態は新しい個体に置き換わります。</span>
-<button id="picker-close" hidden>
 部屋に戻る
 </button>
 </div>
